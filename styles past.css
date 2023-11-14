@@ -43,6 +43,7 @@ body {
     text-align: center;
     padding-top: 4vh;
     color: rgb(112, 195, 195);
+    min-height: 95vh;
   }
 
   .personal {
