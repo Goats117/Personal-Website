@@ -108,10 +108,6 @@
         .btn-light {
             color: #000;
         }
-
-        .text-white-50 {
-            color: rgb(255, 0, 0);
-        }
         
         .feature-icon-small {
             display: inline-flex;
@@ -131,8 +127,23 @@
             max-height: 100%;
         }
 
-        
+        /* Adjust text color and styles as per your design */
+        .text-white {
+            color: #2491EB !important; /* Adjust text color */
+        }
 
+        .text-shadow-1 {
+            text-shadow: 1px 1px 5px #99bee0; /* Example of adding text shadow */
+        }
+
+        /* Change text color of card headings */
+        .card h3 {
+            color: #99bee0; /* White text color */
+        }
+
+        .lead {
+            color: #99bee0;
+        }
         
     </style>
 </head>
@@ -156,7 +167,7 @@
                 <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
                     <div class="col d-flex flex-column align-items-start gap-2">
                         <h2 class="fw-bold text-body-emphasis">I'm a Cloud Engineer with 7 years of IT experience</h2>
-                        <p class="text-body-secondary">I have multiple certifications in AWS, Azure, FrontEnd Development and Networking. I'm constantly striving to learn more and add to my certifications and projects list.</p>
+                        <p class="text-body-secondary">I started out as an intern doing in-house IT immediately after high school for an Ad Space company. After a couple of months, they moved me to full-time and from there, I grew my knowledge through real-world experience and certifications. From this, I never felt the need to go the degree path despite trying out a couple of semesters at Santa Fe Community College in my early 20's. I felt like I was learning less doing it this way and went back to prioritizing getting the experience and proving myself in the field.<br><br> It was shortly after that decision I started working at West Networks as a helpdesk technician where I then grew into my Cloud Engineer role, primarily AWS. By month 3 the CEO simply said, "We need someone AWS certified and able to support our clients" and by month 4, I had my first cert and project done in the cloud. It's only grown from there and is continuing too.<br><br>I have a drive for technology, growth and I'm the kind of person that if I don't know something immedietly, I will figure it out using the resources I have.</p>
                         
                     </div>
             
@@ -201,78 +212,57 @@
             </div>
         </main>
 
-        <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2">Projects</h2>
+        <div class="container marketing">
+            <!-- START THE FEATURETTES -->
         
-            <div class="container">
-                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                    <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/images/costcut.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Better redundancy and cut costs</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                                    </li>
-                                    <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                                        <small>Earth</small>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                                        <small>3d</small>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Private Cloud VoIP System</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                                    </li>
-                                    <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                                        <small>Pakistan</small>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                                        <small>4d</small>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Internal AI Knowledgebase</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                                    </li>
-                                    <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                                        <small>California</small>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                                        <small>5d</small>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h3>Past Projects</h3>
+            <br>
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Increased redundancy<span class="text-body-secondary" style="font-style: italic;"> with reduced cost</span></h2>
+                <hr class="featurette-divider">
+                <p class="lead">My most recent AWS Project was creating cross-region redundancy for a client while maintaining their VPN connectivity to the cloud to access their server in the event of a disaster. What was significant about this is that they not only had their hosting cost cut down with my design compared to what they already had, but it also enabled them to have Verizon directly terminate BGP into their VPC and connect their field devices back to their infrastructure over their private Verizon network</p>
+              </div>
+              <div class="col-md-5">
+                <img src="./images/costcutscale.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="250" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)" data-darkreader-inline-fill="" style="--darkreader-inline-fill: var(--darkreader-bg--bs-secondary-bg, #181a1b);"></rect></img>
+              </div>
             </div>
+        
+        
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <br>
+                <h2 class="featurette-heading fw-normal lh-1">VoIP Server <span class="text-body-secondary" style="font-style: italic;">In a private cloud</span></h2>
+                <hr class="featurette-divider">
+                <p class="lead">The first project I completed in AWS was creating a 3CX server in AWS that then was tunneling over a VPN to the on-prem routers, and all the clients VoIP traffic was encrypted. This also opened the client to having back-up solutions in the cloud for their server as well as scalability for their other locations</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img src="./images/phone-call.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)" data-darkreader-inline-fill="" style="--darkreader-inline-fill: var(--darkreader-bg--bs-secondary-bg, #181a1b);"></rect></img>              </div>
+            </div>
+        
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <br>
+                <h2 class="featurette-heading fw-normal lh-1">Internal knowledge base <span class="text-body-secondary" style="font-style: italic;">Built with AI</span></h2>
+                <hr class="featurette-divider">
+                <p class="lead">To improve the efficiency of the support team, and eventually the entire company, I came up with the idea to create and train our own AI. I utilized ChatRTX by NVIDIA and linked it to our internal OneNote as well as some other SharePoint resources. From new hires to even senior employees at the company, it was beneficial and didn’t talk to the internet at all significantly reducing the chances of any attacks and data leaks</p>
+              </div>
+              <div class="col-md-5">
+                <img src="./images/nvidia.svg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)" data-darkreader-inline-fill="" style="--darkreader-inline-fill: var(--darkreader-bg--bs-secondary-bg, #181a1b);"></rect></img>              </div>
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <!-- /END THE FEATURETTES -->
+        
+          </div>
+
+        
             
             
-        <a href="https://www.linkedin.com/in/nick-faircloth-84a611163/" class="btn btn-primary btn-lg">Linkedin</a>
+        <!-- <a href="https://www.linkedin.com/in/nick-faircloth-84a611163/" class="btn btn-primary btn-lg">Linkedin</a> -->
 
         <footer class="mt-auto text-white-50">
             <p></p>
