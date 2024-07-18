@@ -60,11 +60,10 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 2rem; /* Add margin to push the header away from the top */
-        }
-
-        h3 {
-            margin-left: 1rem; /* Adjust margin to space out the h3 from the left edge */
-            font-size: 3rem;
+            position: sticky;
+            top: 0;
+            background-color: #2d2f30; /* Match the body background or customize */
+            z-index: 1000; /* Ensure it's above other content */
         }
 
         .nav-masthead {
@@ -152,11 +151,11 @@
     <div class="cover-container">
         <header>
             <h3 class="mb-0">Nick Faircloth</h3>
-            <nav class="nav nav-masthead">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-                <a class="nav-link" href="#">Projects</a>
-                <a class="nav-link" href="#">Resume</a>
-                <a class="nav-link" href="#">Contact</a>
+            <nav class="nav nav-masthead sticky-top"> <!-- Added class 'sticky-top' -->
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vRY8qNjh8qa4apLihtCM6B8Jhe3UJVkyOmSg99TdI2RhG5P_UaYgG9rbbuAGnUfWQ/pub">Resume</a>
+                <a class="nav-link" href="https://www.linkedin.com/in/nick-faircloth-84a611163/">Linkedin</a>
             </nav>
         </header>
 
@@ -164,7 +163,7 @@
             <div class="container px-4 py-5">
                 <h2 class="pb-2"></h2>
             
-                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                <div id="about" class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
                     <div class="col d-flex flex-column align-items-start gap-2">
                         <h2 class="fw-bold text-body-emphasis">I'm a Cloud Engineer with 7 years of IT experience</h2>
                         <p class="text-body-secondary">I started out as an intern doing in-house IT immediately after high school for an Ad Space company. After a couple of months, they moved me to full-time and from there, I grew my knowledge through real-world experience and certifications. From this, I never felt the need to go the degree path despite trying out a couple of semesters at Santa Fe Community College in my early 20's. I felt like I was learning less doing it this way and went back to prioritizing getting the experience and proving myself in the field.<br><br> It was shortly after that decision I started working at West Networks as a helpdesk technician where I then grew into my Cloud Engineer role, primarily AWS. By month 3 the CEO simply said, "We need someone AWS certified and able to support our clients" and by month 4, I had my first cert and project done in the cloud. It's only grown from there and is continuing too.<br><br>I have a drive for technology, growth and I'm the kind of person that if I don't know something immedietly, I will figure it out using the resources I have.</p>
@@ -217,7 +216,7 @@
         
             <h3>Past Projects</h3>
             <br>
-            <div class="row featurette">
+            <div id="projects" class="row featurette">
               <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">Increased redundancy<span class="text-body-secondary" style="font-style: italic;"> with reduced cost</span></h2>
                 <hr class="featurette-divider">
@@ -253,7 +252,7 @@
               </div>
             </div>
         
-            
+            <hr class="featurette-divider">
         
             <!-- /END THE FEATURETTES -->
         
